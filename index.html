@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrega 01: JO-KEN-PO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+
+        <h1>Placar:</h1>
+        <section class="count">
+            <form id="contar">
+                <label for="vic">Ganhou:</label>
+                <input type="text" name="vic" readonly>
+                <label for="lose">Perdeu:</label>
+                <input type="text" name="lose" readonly>
+                <label for="empate">Empatou:</label>
+                <input type="text" name="empate" readonly>
+
+                <input type="reset" value="Reset" id="reset">
+            </form>
+        </section>
+        <img src="./img/Jo-Ken-Po.png" class="img_topo" alt="img_topo">
+
+        <section class="jogo_sect">
+
+            <div class="links">
+                <h3>Escolha sua arma:</h3>
+                <button id="pedra"><img src="./img/pedra.png" alt="pedra"></button>
+                <button id="papel"><img src="./img/papel.png" alt="papel"></button>
+                <button id="tesoura"><img src="./img/tesoura.png" alt="tesoura"></button>
+
+            </div>
+
+            <div class="computer">
+                <form id="pchoose">
+                    <p>
+                        <label for="pc">Computador escolheu:</label>
+                        <input type="text" name="pc" readonly>
+                    </p>
+                </form>
+            </div>
+        </section>
+
+
+        <div id="choose">
+            <div class="escolha">
+                <div id="win">
+                    <h2 class="h2">Você Ganhou!</h2>
+                    <span>Parabéns!</span>
+                </div>
+
+                <div id="lose">
+                    <h2 class="h2">Você Perdeu!
+                        <h2>
+                            <span>:(</span>
+                </div>
+                <div id="draw">
+                    <h2 class="h2">Empatou!</h2>
+                    <span> Talvez outra hora...</span>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
